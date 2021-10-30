@@ -2,8 +2,9 @@ const express = require('express');
 const app = express();
 
 app.get('/', (req,res) => {
-    // res.send("Hello Universe 🌌")
-    res.status(200).json({message: "Error occurred"})
+    // res.download("./package-lock.json")
+    // res.status(200).json({message: "Error occurred"})
+    res.render('index')
 })
 
 app.listen(7000)
