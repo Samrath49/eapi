@@ -9,4 +9,7 @@ app.get('/', (req,res) => {
     res.render('index', {message: "Universe 🌌"})
 })
 
+const userRouter = require('./routes/users');
+app.use("/users", userRouter)
+
 app.listen(7000)
